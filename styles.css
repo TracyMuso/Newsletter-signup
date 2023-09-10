@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto bold';
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+}
+
+.text-container ul {
+    list-style-type: none;
+    font-family: 'Roboto bold';
+    padding: 0;
+}
+
+@media screen and (width: 375px) {
+    .illustration-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 300px;
+    }
+
+    .container {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-container {
+        align-items: start;
+        margin-top: 250px;
+        padding-top: 2rem;
+    }
+
+    .text-container ul li p {
+        margin: 0.5rem;
+    }
+
+    .text-container h1 {
+        font-family: 'Roboto bold';
+        font-weight: 700;
+        font-size: 2.3rem;
+        color: hsl(234, 29%, 20%);
+    }
+
+    .text-container ul li {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        font-family: 'Roboto';
+        color: hsl(235, 18%, 26%);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 95%;
+    }
+
+    label {
+        font-family: 'Roboto bold';
+        color: hsl(234, 29%, 20%);
+        font-size: 13px;
+    }
+
+    input {
+        padding: 0.5rem;
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 7px;
+        font-size: 16x;
+        padding: 0.8rem;
+    }
+
+    button {
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 7px;
+        border: 1px solid hsl(234, 29%, 20%);
+        padding: 18px 14px;
+        font-family: 'Roboto bold';
+        margin: 1rem 0;
+    }
+}
