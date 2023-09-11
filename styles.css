@@ -35,10 +35,11 @@ p {
         background-size: contain;
         width: 100%;
         height: 300px;
+        display: none;
     }
 
     .container {
-        display:flex;
+        display:none;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -102,5 +103,52 @@ p {
         padding: 18px 14px;
         font-family: 'Roboto bold';
         margin: 1rem 0;
+    }
+
+    .success-msg-cont {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 2rem;
+        overflow-y: hidden;
+        height: 100%;
+    }
+
+    .success-msg {
+        align-items: start;
+        gap: 1.5rem;
+        padding-bottom: 7rem;
+        padding-top: 3.5rem;
+    }
+
+    .success-msg img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .success-msg h1 {
+        font-family: 'Roboto bold';
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 13px;
+    }
+
+    .success-msg p {
+        font-size: 15px;
+        line-height: 1.4rem;
+        margin: 0;
+    }
+
+    .success-msg p strong {
+        font-weight: 700;
+    }
+
+    .success-msg-cont button {
+        margin: 1rem auto;
+        width: 100%;
+        font-size: 15px;
     }
 }

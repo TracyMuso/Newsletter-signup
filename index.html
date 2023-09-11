@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; display: none; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -49,11 +49,15 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <img src="/assets/images/icon-list.svg" alt="success-icon" />
-  <h1>Thanks for subscribing!</h1>
-  <p>A confirmation email has been sent to ash@loremcompany.com. 
-    Please open it and click the button inside to confirm your subscription.</p>
-    <button>Dismiss message</button>
+  <div class="success-msg-cont">
+    <div class="success-msg">
+      <img src="/assets/images/icon-list.svg" alt="success-icon" />
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to   <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+     <button>Dismiss message</button>
+  </div>
 
   <!-- Success message end -->
   
