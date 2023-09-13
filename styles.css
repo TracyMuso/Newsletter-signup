@@ -8,8 +8,8 @@
     src: url(/assets/fonts/Roboto-Bold.ttf);
 }
 
-body {
-    background-color: hsl(0, 0%, 100%);
+.success-msg-cont {
+    display: none;
 }
 
 p {
@@ -25,6 +25,10 @@ p {
 }
 
 @media screen and (width: 375px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+
     .illustration-img {
         position: absolute;
         top: 0;
@@ -35,11 +39,10 @@ p {
         background-size: contain;
         width: 100%;
         height: 300px;
-        display: none;
     }
 
     .container {
-        display:none;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -106,6 +109,140 @@ p {
     }
 
     .success-msg-cont {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 2rem;
+        overflow-y: hidden;
+        height: 100%;
+    }
+
+    .success-msg {
+        align-items: start;
+        gap: 1.5rem;
+        padding-bottom: 7rem;
+        padding-top: 3.5rem;
+    }
+
+    .success-msg img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .success-msg h1 {
+        font-family: 'Roboto bold';
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 13px;
+    }
+
+    .success-msg p {
+        font-size: 15px;
+        line-height: 1.4rem;
+        margin: 0;
+    }
+
+    .success-msg p strong {
+        font-weight: 700;
+    }
+
+    .success-msg-cont button {
+        margin: 1rem auto;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (width: 1440px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+    }
+    
+    .container {
+        position: relative;
+        width: 60%;
+        background-color: hsl(0, 0%, 100%);
+        border: solid 1px hsl(0, 0%, 100%);
+        border-radius: 25px;
+        margin: 7rem auto;
+        padding: 2rem;
+    }
+    
+    .illustration-img {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        height: 30rem;
+        width: 22rem;
+        background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+
+    .text-container {
+        align-items: start;
+        padding: 1rem;
+        width: 50%;
+    }
+
+    .text-container ul li p {
+        margin: 0.5rem;
+    }
+
+    .text-container h1 {
+        font-family: 'Roboto bold';
+        font-weight: 700;
+        font-size: 2.3rem;
+        color: hsl(234, 29%, 20%);
+    }
+
+    .text-container ul li {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        font-family: 'Roboto';
+        color: hsl(235, 18%, 26%);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 50%;
+    }
+
+    label {
+        font-family: 'Roboto bold';
+        color: hsl(234, 29%, 20%);
+        font-size: 13px;
+    }
+
+    input {
+        padding: 0.5rem;
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 7px;
+        font-size: 16x;
+        padding: 0.8rem;
+    }
+
+    button {
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 7px;
+        border: 1px solid hsl(234, 29%, 20%);
+        padding: 18px 14px;
+        font-family: 'Roboto bold';
+        margin: 1rem 0;
+    }
+
+    .success-msg-cont {
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
