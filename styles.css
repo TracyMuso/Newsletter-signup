@@ -8,9 +8,9 @@
     src: url(/assets/fonts/Roboto-Bold.ttf);
 }
 
-.success-msg-cont {
+/* .success-msg-cont {
     display: none;
-}
+} */
 
 p {
     font-family: 'Roboto';
@@ -170,6 +170,7 @@ p {
         border-radius: 25px;
         margin: 7rem auto;
         padding: 2rem;
+        display: none;
     }
     
     .illustration-img {
@@ -242,22 +243,17 @@ p {
     }
 
     .success-msg-cont {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0;
-        padding: 2rem;
-        overflow-y: hidden;
-        height: 100%;
+        background-color: hsl(0, 0%, 100%);
+        border: solid 1px hsl(0, 0%, 100%);
+        border-radius: 25px;
+        margin: 11rem auto;
+        padding: 3rem;
+        width: 30%;
     }
 
     .success-msg {
         align-items: start;
         gap: 1.5rem;
-        padding-bottom: 7rem;
-        padding-top: 3.5rem;
     }
 
     .success-msg img {
@@ -268,7 +264,8 @@ p {
     .success-msg h1 {
         font-family: 'Roboto bold';
         color: hsl(234, 29%, 20%);
-        font-weight: 700;
+        font-weight: 800;
+        font-size: 2.5rem;
         margin-top: 25px;
         margin-bottom: 13px;
     }
@@ -277,6 +274,7 @@ p {
         font-size: 15px;
         line-height: 1.4rem;
         margin: 0;
+        padding: 0.5rem 0;
     }
 
     .success-msg p strong {
