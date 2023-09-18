@@ -8,14 +8,60 @@
     src: url(/assets/fonts/Roboto-Bold.ttf);
 }
 
-/* .success-msg-cont {
-    display: none;
-} */
-
 p {
     font-family: 'Roboto';
     font-size: 16px;
     color: hsl(235, 18%, 26%);
+}
+
+button {
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+    border: 1px solid hsl(234, 29%, 20%);
+    padding: 18px 14px;
+    font-family: 'Roboto bold';
+    margin: 1rem auto;
+    width: 100%;
+    font-size: 15px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 7px;
+    font-size: 16x;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+input:invalid {
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 92%);
+  }
+  
+input:valid {
+    border: 1px solid rgb(20, 199, 64);
+}
+
+form div {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-msg {
+    font-size: 13px;
+    font-family: 'Roboto bold';
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+  
+button:hover, button:focus {
+    background-image: linear-gradient(to-right, hsl(4, 100%, 77%), hsl(4, 100%, 67%));
 }
 
 .text-container ul {
@@ -90,24 +136,6 @@ p {
         font-size: 13px;
     }
 
-    input {
-        padding: 0.5rem;
-        border: 1px solid hsl(231, 7%, 60%);
-        border-radius: 7px;
-        font-size: 16x;
-        padding: 0.8rem;
-    }
-
-    button {
-        background-color: hsl(234, 29%, 20%);
-        color: hsl(0, 0%, 100%);
-        border-radius: 7px;
-        border: 1px solid hsl(234, 29%, 20%);
-        padding: 18px 14px;
-        font-family: 'Roboto bold';
-        margin: 1rem 0;
-    }
-
     .success-msg-cont {
         display: none;
         position: absolute;
@@ -149,12 +177,6 @@ p {
     .success-msg p strong {
         font-weight: 700;
     }
-
-    .success-msg-cont button {
-        margin: 1rem auto;
-        width: 100%;
-        font-size: 15px;
-    }
 }
 
 @media screen and (width: 1440px) {
@@ -170,7 +192,6 @@ p {
         border-radius: 25px;
         margin: 7rem auto;
         padding: 2rem;
-        display: none;
     }
     
     .illustration-img {
@@ -224,24 +245,6 @@ p {
         font-size: 13px;
     }
 
-    input {
-        padding: 0.5rem;
-        border: 1px solid hsl(231, 7%, 60%);
-        border-radius: 7px;
-        font-size: 16x;
-        padding: 0.8rem;
-    }
-
-    button {
-        background-color: hsl(234, 29%, 20%);
-        color: hsl(0, 0%, 100%);
-        border-radius: 7px;
-        border: 1px solid hsl(234, 29%, 20%);
-        padding: 18px 14px;
-        font-family: 'Roboto bold';
-        margin: 1rem 0;
-    }
-
     .success-msg-cont {
         background-color: hsl(0, 0%, 100%);
         border: solid 1px hsl(0, 0%, 100%);
@@ -249,6 +252,7 @@ p {
         margin: 11rem auto;
         padding: 3rem;
         width: 30%;
+        display: none;
     }
 
     .success-msg {
@@ -279,11 +283,5 @@ p {
 
     .success-msg p strong {
         font-weight: 700;
-    }
-
-    .success-msg-cont button {
-        margin: 1rem auto;
-        width: 100%;
-        font-size: 15px;
     }
 }

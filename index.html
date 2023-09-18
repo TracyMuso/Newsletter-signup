@@ -39,8 +39,11 @@
           <span>
         </div>
         <form>
-          <label for="email">Email address</label>
-          <input placeholder="email@company.com" type="email" name="email" id="email" />
+          <div>
+            <label for="email">Email address</label>
+            <span class="error-msg">Valid email required</span>
+          </div>
+          <input placeholder="email@company.com" type="email" name="email" id="email" maxlength="25" min="6" required />
           <button>Subscribe to monthly newsletter
           </button>
         </form>
