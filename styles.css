@@ -8,6 +8,10 @@
     src: url(/assets/fonts/Roboto-Bold.ttf);
 }
 
+.container-hide {
+    display: none;
+}
+
 p {
     font-family: 'Roboto';
     font-size: 16px;
@@ -37,13 +41,14 @@ input {
     cursor: pointer;
 }
 
-input:invalid {
+.invalid {
     border: 1px solid hsl(4, 100%, 67%);
     background-color: hsl(4, 100%, 92%);
-  }
-  
-input:valid {
-    border: 1px solid rgb(20, 199, 64);
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-size: 16x;
+    padding: 0.8rem;
+    cursor: pointer;
 }
 
 form div {
@@ -58,6 +63,13 @@ form div {
     font-family: 'Roboto bold';
     color: hsl(4, 100%, 67%);
     display: none;
+}
+
+.error-msg-active {
+    font-size: 13px;
+    font-family: 'Roboto bold';
+    color: hsl(4, 100%, 67%);
+    display: block;
 }
   
 button:hover, button:focus {
@@ -138,13 +150,17 @@ button:hover, button:focus {
 
     .success-msg-cont {
         display: none;
+    }
+
+    .success-msg-active {
+        background-color: hsl(0, 0%, 100%);
+        display: block;
         position: absolute;
-        top: 0;
+        top: 0 !important;
         left: 0;
         right: 0;
         margin: 0;
         padding: 2rem;
-        overflow-y: hidden;
         height: 100%;
     }
 
@@ -253,6 +269,16 @@ button:hover, button:focus {
         padding: 3rem;
         width: 30%;
         display: none;
+    }
+
+    .success-msg-active {
+        background-color: hsl(0, 0%, 100%);
+        border: solid 1px hsl(0, 0%, 100%);
+        border-radius: 25px;
+        margin: 11rem auto;
+        padding: 3rem;
+        width: 30%;
+        display: block;
     }
 
     .success-msg {
